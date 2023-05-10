@@ -311,6 +311,16 @@ pcbs:
                     from: "{{column_net}}"
                     to: "{{colrow}}"
             
+            diodes:
+                what: diode
+                where: [key]
+                params:
+                    from: "{{colrow}}"
+                    to: "{{row_net}}"
+                adjust:
+                    shift: [0.5 kcow + 0.5, -3.5]
+                    rotate: 90
+            
             mcu:
                 what: promicro_pretty
                 where: matrix_inner_top
