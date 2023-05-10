@@ -310,3 +310,13 @@ pcbs:
                     keycaps: false
                     from: "{{column_net}}"
                     to: "{{colrow}}"
+            
+            diodes:
+                what: sod-123w
+                where: [key]
+                params:
+                    from: "{{colrow}}"
+                    to: "{{row_net}}"
+                adjust:
+                    shift: [0.5 kcow + 0.5, -3.5]
+                    rotate: 90
