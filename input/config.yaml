@@ -311,12 +311,23 @@ pcbs:
                     from: "{{column_net}}"
                     to: "{{colrow}}"
             
-            diodes:
-                what: sod-123w
-                where: [key]
+            mcu:
+                what: promicro_pretty
+                where: matrix_inner_top
                 params:
-                    from: "{{colrow}}"
-                    to: "{{row_net}}"
+                    P0: data
+                    P21: C0
+                    P20: C1
+                    P19: C2
+                    P18: C3
+                    P15: C4
+                    P14: C5
+                    P2: SDA
+                    P3: SCL
+                    P4: R0
+                    P5: R1
+                    P6: R2
+                    P7: R3
                 adjust:
-                    shift: [0.5 kcow + 0.5, -3.5]
-                    rotate: 90
+                    shift: [19.7, 0.5 kp -0.125 kp - 19.3]
+                    rotate: -90
