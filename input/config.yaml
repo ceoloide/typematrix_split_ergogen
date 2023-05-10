@@ -331,3 +331,35 @@ pcbs:
                 adjust:
                     shift: [19.7, 0.5 kp -0.125 kp - 19.3]
                     rotate: -90
+
+            oled:
+                what: oled
+                where: matrix_inner_top
+                params:
+                    SDA: SDA
+                    SCL: SCL
+                adjust:
+                    shift: [0.5 ks + 4.16, 0.5 kp -0.125 kp - 19.3 - 22.65]
+                    rotate: 90
+
+            reset_switch:
+                what: reset_switch
+                where: matrix_inner_top
+                params:
+                    from: RST
+                    to: GND
+                adjust:
+                    shift: [0.5 ks + 18, 0.5 kp -0.125 kp - 19.3 - 20.65]
+                    rotate: -90
+
+            trrs:
+                what: trrs
+                where: matrix_inner_top
+                params:
+                    A: J1-PadA
+                    B: data
+                    C: GND
+                    D: VCC
+                adjust:
+                    shift: [0.5 ks + 19.2, 0.5 kp -0.125 kp - 19.3 - 30.75]
+                    rotate: -90
