@@ -24,23 +24,23 @@ jobs:
       - name: Export DSN 
         uses: ./.github/actions/export-dsn
         with:
-          boards: left right
+          boards: corney_island
       - name: Autoroute PCB
         uses: ./.github/actions/autoroute
         with:
-          boards: left right
+          boards: corney_island
       - name: Import SES
         uses: ./.github/actions/import-ses
         with:
-          boards: left right
+          boards: corney_island
       - name: DRC check
         uses: ./.github/actions/run-drc
         with:
-          boards: left right
+          boards: corney_island
       - name: Export Gerbers
         uses: ./.github/actions/export-gerbers
         with:
-          boards: left right
+          boards: corney_island
       - name: Persist output
         uses: actions/upload-artifact@v3
         with:
